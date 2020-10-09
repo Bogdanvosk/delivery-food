@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- Styles -->
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -17,16 +18,17 @@
     <header class="header">
         <div class="container">
             <div class="header-wrapper">
-                <a href='index.html' >
+                <a href='index.html' class='wow animate__animated animate__fadeInDown' data-wow-delay=".2s">
                     <img src="img/logo.svg" class='logo' alt="Логотип">
                 </a>
-                <input type="text" class="input input-adress" placeholder="Адрес доставки">
-                <div class="buttons">
+                <input type="text" class="input input-adress wow animate__animated animate__fadeInDown"
+                    data-wow-delay=".4s" placeholder="Адрес доставки">
+                <div class="buttons wow animate__animated animate__fadeInDown" data-wow-delay=".6s">
                     <button class="button button-primary">
                         <img src="img/user.svg" alt="User" class='button-icon'>
                         <span class='button-text'>Войти</span>
                     </button>
-                    <button class="button">
+                    <button class="button" id='cart-button'>
                         <img src="img/cart.svg" alt="User" class='button-icon'>
                         <span class="button-text">Корзина</span>
                     </button>
@@ -34,7 +36,6 @@
             </div>
         </div>
     </header>
-
     <!-- Main -->
     <main>
         <section class="restaurants">
@@ -47,10 +48,9 @@
                         <div class="category">Пицца</div>
                     </div>
                     <!-- /.card-info -->
-
                 </div>
                 <div class="cards">
-                    <div class="card card-wide">
+                    <div class="card card-wide wow animate__animated animate__fadeInLeft" data-wow-delay=".2s">
                         <img src="img/restaurant-image1.jpg" alt="Image" class="card-image card-image-restaurant">
                         <div class="card-text">
                             <div class="card-heading">
@@ -73,7 +73,7 @@
                         <!-- /.card-text -->
                     </div>
                     <!-- /.card -->
-                    <div class="card card-wide">
+                    <div class="card card-wide wow animate__animated animate__fadeInRight" data-wow-delay=".4s">
                         <img src="img/restaurant-image2.jpg" alt="Image" class="card-image card-image-restaurant">
                         <div class="card-text">
                             <div class="card-heading">
@@ -81,7 +81,8 @@
                             </div>
                             <!-- /.card-heading -->
                             <div class="card-info">
-                                <div class="ingredients">Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.</div>
+                                <div class="ingredients">Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли
+                                    нори.</div>
                             </div>
                             <!-- /.card-info -->
                             <div class="card-buttons">
@@ -96,7 +97,7 @@
                         <!-- /.card-text -->
                     </div>
                     <!-- /.card -->
-                    <div class="card card-wide">
+                    <div class="card card-wide wow animate__animated animate__fadeInLeft" data-wow-delay=".6s">
                         <img src="img/restaurant-image3.jpg" alt="Image" class="card-image card-image-restaurant">
                         <div class="card-text">
                             <div class="card-heading">
@@ -104,7 +105,8 @@
                             </div>
                             <!-- /.card-heading -->
                             <div class="card-info">
-                                <div class="ingredients"> Рис, креветка отварная, сыр сливочный, лосось, огурец свежий</div>
+                                <div class="ingredients"> Рис, креветка отварная, сыр сливочный, лосось, огурец свежий
+                                </div>
                             </div>
                             <!-- /.card-info -->
                             <div class="card-buttons">
@@ -119,7 +121,7 @@
                         <!-- /.card-text -->
                     </div>
                     <!-- /.card -->
-                    <div class="card card-wide">
+                    <div class="card card-wide wow animate__animated animate__fadeInRight" data-wow-delay=".8s">
                         <img src="img/restaurant-image4.jpg" alt="Image" class="card-image card-image-restaurant">
                         <div class="card-text">
                             <div class="card-heading">
@@ -127,7 +129,8 @@
                             </div>
                             <!-- /.card-heading -->
                             <div class="card-info">
-                                <div class="ingredients">Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус цезарь</div>
+                                <div class="ingredients">Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус
+                                    цезарь</div>
                             </div>
                             <!-- /.card-info -->
                             <div class="card-buttons">
@@ -142,7 +145,7 @@
                         <!-- /.card-text -->
                     </div>
                     <!-- /.card -->
-                    <div class="card card-wide">
+                    <div class="card card-wide wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
                         <img src="img/restaurant-image5.jpg" alt="Image" class="card-image card-image-restaurant">
                         <div class="card-text">
                             <div class="card-heading">
@@ -150,7 +153,8 @@
                             </div>
                             <!-- /.card-heading -->
                             <div class="card-info">
-                                <div class="ingredients">Рис, помидор свежий, перец болгарский, авокадо, огурец, айсберг</div>
+                                <div class="ingredients">Рис, помидор свежий, перец болгарский, авокадо, огурец, айсберг
+                                </div>
                             </div>
                             <!-- /.card-info -->
                             <div class="card-buttons">
@@ -165,7 +169,7 @@
                         <!-- /.card-text -->
                     </div>
                     <!-- /.card -->
-                    <div class="card card-wide">
+                    <div class="card card-wide wow animate__animated animate__fadeInRight" data-wow-delay="1.2s">
                         <img src="img/restaurant-image6.jpg" alt="Image" class="card-image card-image-restaurant">
                         <div class="card-text">
                             <div class="card-heading">
@@ -173,7 +177,8 @@
                             </div>
                             <!-- /.card-heading -->
                             <div class="card-info">
-                                <div class="ingredients">Рис, водоросли нори, креветки отварные, сыр сливочный, огурцы.</div>
+                                <div class="ingredients">Рис, водоросли нори, креветки отварные, сыр сливочный, огурцы.
+                                </div>
                             </div>
                             <!-- /.card-info -->
                             <div class="card-buttons">
@@ -197,15 +202,16 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-wrapper">
-                <img src="img/logo.svg" alt="Logo" class="logo footer-logo">
-                <nav class="footer-nav">
+                <img src="img/logo.svg" alt="Logo" class="logo footer-logo wow animate__animated animate__fadeInUp" 
+                    data-wow-delay=".2s">
+                <nav class="footer-nav wow animate__animated animate__fadeInUp"  data-wow-delay=".4s">
                     <a href="#" class="footer-link">Ресторанам </a>
                     <a href="#" class="footer-link">Курьерам</a>
                     <a href="#" class="footer-link">Пресс-центр</a>
                     <a href="#" class="footer-link">Контакты</a>
                 </nav>
-                <div class="social-links">
-                    <a href="#" class="social-link">
+                <div class="social-links wow animate__animated animate__fadeInUp">
+                    <a href="#" class="social-link" data-wow-delay=".6s">
                         <img src="img/instagram.svg" alt="Instagram">
                     </a>
                     <a href="#" class="social-link">
@@ -218,6 +224,72 @@
             </div>
         </div>
     </footer>
+    <div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 class="modal-title">Корзина</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="food-row">
+                    <span class="food-name">Ролл угорь стандарт</span>
+                    <strong class="food-price">250 ₽</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">-</button>
+                        <span class="counter">1</span>
+                        <button class="counter-button">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Ролл угорь стандарт</span>
+                    <strong class="food-price">250 ₽</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">-</button>
+                        <span class="counter">1</span>
+                        <button class="counter-button">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Ролл угорь стандарт</span>
+                    <strong class="food-price">250 ₽</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">-</button>
+                        <span class="counter">1</span>
+                        <button class="counter-button">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Ролл угорь стандарт</span>
+                    <strong class="food-price">250 ₽</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">-</button>
+                        <span class="counter">1</span>
+                        <button class="counter-button">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Ролл угорь стандарт</span>
+                    <strong class="food-price">250 ₽</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">-</button>
+                        <span class="counter">1</span>
+                        <button class="counter-button">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <span class="modal-pricetag">1250 ₽</span>
+                <div class="footer-buttons">
+                    <button class="button button-primary">Оформить заказ</button>
+                    <button class="button" id='modal-cancel'>Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="js/main.js"></script>
 </body>
 
